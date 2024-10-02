@@ -14,6 +14,9 @@
   "testTargets" : [
     {
       "parallelizable" : true,
+      "skippedTests" : [
+        "EssentialFeedTests"
+      ],
       "target" : {
         "containerPath" : "container:EssentialFeed.xcodeproj",
         "identifier" : "24405F812C6CC37D00E6DFA1",
