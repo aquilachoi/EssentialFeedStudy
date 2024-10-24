@@ -22,14 +22,19 @@
   },
   "testTargets" : [
     {
-      "parallelizable" : true,
-      "skippedTests" : [
-        "EssentialFeedTests"
-      ],
+      "enabled" : false,
       "target" : {
         "containerPath" : "container:EssentialFeed.xcodeproj",
         "identifier" : "24405F812C6CC37D00E6DFA1",
         "name" : "EssentialFeedTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:EssentialFeed.xcodeproj",
+        "identifier" : "246BE9A02CCA613B00261EA0",
+        "name" : "EssentialFeedAPIEndToEndTests"
       }
     }
   ],
