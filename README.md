@@ -83,15 +83,27 @@ Given the customer doesn't have connectivity
 5. System delivers image feed.
 
 #### Retrieval error course (sad path):
-1. System deletes cache.
-2. System delivers error.
+1. System delivers error.
 
 #### Expired cache course (sad path): 
-1. System deletes cache.
-2. System delivers no feed images.
+1. System delivers no feed images.
 
 #### Empty cache course (sad path): 
 1. System delivers no feed images.
+
+
+### Validate Feed Cache Use Case
+
+#### Primary course:
+1. Execute "Validate Cache" command with above data.
+2. System retrieves feed data from cache.
+3. System validates cache is less than seven days old.
+
+#### Retrieval error course (sad path):
+1. System deletes cache.
+
+#### Expired cache course (sad path): 
+1. System deletes cache.
 
 
 ### Cache Feed Use Case
@@ -131,7 +143,7 @@ Given the customer doesn't have connectivity
 | `id`          | `UUID`              |
 | `description` | `String` (optional) |
 | `location`    | `String` (optional) |
-| `url`	        | `URL`               |
+| `url`            | `URL`               |
 
 ### Payload contract
 
@@ -141,28 +153,28 @@ GET *url* (TBD)
 200 RESPONSE
 
 {
-	"items": [
-		{
-			"id": "a UUID",
-			"description": "a description",
-			"location": "a location",
-			"image": "https://a-image.url",
-		},
-		{
-			"id": "another UUID",
-			"description": "another description",
-			"image": "https://another-image.url"
-		},
-		{
-			"id": "even another UUID",
-			"location": "even another location",
-			"image": "https://even-another-image.url"
-		},
-		{
-			"id": "yet another UUID",
-			"image": "https://yet-another-image.url"
-		}
-		...
-	]
+    "items": [
+        {
+            "id": "a UUID",
+            "description": "a description",
+            "location": "a location",
+            "image": "https://a-image.url",
+        },
+        {
+            "id": "another UUID",
+            "description": "another description",
+            "image": "https://another-image.url"
+        },
+        {
+            "id": "even another UUID",
+            "location": "even another location",
+            "image": "https://even-another-image.url"
+        },
+        {
+            "id": "yet another UUID",
+            "image": "https://yet-another-image.url"
+        }
+        ...
+    ]
 }
 ```
