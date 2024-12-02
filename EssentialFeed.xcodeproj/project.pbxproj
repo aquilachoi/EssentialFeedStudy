@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		242126622CFD62A000530FB3 /* CodableFeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242126612CFD62A000530FB3 /* CodableFeedStore.swift */; };
 		2439BBFD2CE611200034CD0E /* CacheFeedUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2439BBFC2CE611200034CD0E /* CacheFeedUseCaseTests.swift */; };
 		2439BC072CF04E2D0034CD0E /* feed_flowchart.png in Resources */ = {isa = PBXBuildFile; fileRef = 2439BC052CF04E2D0034CD0E /* feed_flowchart.png */; };
 		2439BC082CF04E2D0034CD0E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2439BC062CF04E2D0034CD0E /* README.md */; };
@@ -59,6 +60,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		242126612CFD62A000530FB3 /* CodableFeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableFeedStore.swift; sourceTree = "<group>"; };
 		2439BBFC2CE611200034CD0E /* CacheFeedUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheFeedUseCaseTests.swift; sourceTree = "<group>"; };
 		2439BC042CF04E2D0034CD0E /* feed_architecture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feed_architecture.png; sourceTree = "<group>"; };
 		2439BC052CF04E2D0034CD0E /* feed_flowchart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feed_flowchart.png; sourceTree = "<group>"; };
@@ -224,6 +226,7 @@
 				24A75CC32CE8792000CD87C1 /* FeedStore.swift */,
 				24A75CC72CE8889200CD87C1 /* LocalFeedImage.swift */,
 				2486FF072CF877D300800046 /* FeedCachePolicy.swift */,
+				242126612CFD62A000530FB3 /* CodableFeedStore.swift */,
 			);
 			path = "Feed Cache";
 			sourceTree = "<group>";
@@ -395,6 +398,7 @@
 				24FC70762CAD7A6F004C3E71 /* HTTPClient.swift in Sources */,
 				24FC70752CAD7A6E004C3E71 /* FeedItemsMapper.swift in Sources */,
 				24A75CC62CE8885E00CD87C1 /* RemoteFeedItem.swift in Sources */,
+				242126622CFD62A000530FB3 /* CodableFeedStore.swift in Sources */,
 				2486FF082CF877D300800046 /* FeedCachePolicy.swift in Sources */,
 				24FC70742CAD7A6E004C3E71 /* RemoteFeedLoader.swift in Sources */,
 				24A75CC22CE877A800CD87C1 /* LocalFeedLoader.swift in Sources */,
