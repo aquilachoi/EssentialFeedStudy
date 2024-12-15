@@ -18,7 +18,12 @@ public protocol FeedStore {
     typealias InsertionCompletion = (Error?) -> Void
     typealias RetrievalCompletion = (RetrieveCachedFeedResult) -> Void
     
+    /// 응답 처리 시 적절한 thread 처리가 필요합니다.
     func deleteCachedFeed(completion: @escaping (Error?) -> Void)
+    
+    /// 응답 처리 시 적절한 thread 처리가 필요합니다.
     func insert(_ feed: [LocalFeedImage], timestamp: Date, completion: @escaping InsertionCompletion)
+    
+    /// 응답 처리 시 적절한 thread 처리가 필요합니다.
     func retrieve(completion: @escaping RetrievalCompletion)
 }
