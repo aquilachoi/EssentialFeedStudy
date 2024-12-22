@@ -4,6 +4,7 @@
 
 import Foundation
 
+@frozen
 public enum LoadFeedResult {
 	case success([FeedImage])
 	case failure(Error)
